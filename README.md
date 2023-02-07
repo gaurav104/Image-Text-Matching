@@ -1,6 +1,6 @@
 ﻿# Deep Cross-Modal Image-Text Matching
 
-Hi! This is the code repository of the project for **ECE 570 (Fall 2021)** on **Deep Cross-Modal Image-Text Matching**.
+Hi! This is the code repository of the project for **ECE 570 (Fall 2021)** at Purdue, reproducing the results from **[Deep Cross-Modal Image-Text Matching](https://openaccess.thecvf.com/content_ECCV_2018/papers/Ying_Zhang_Deep_Cross-Modal_Projection_ECCV_2018_paper.pdf)** and **[Adversarial Representation Learning for Text-to-Image Matching](https://openaccess.thecvf.com/content_ICCV_2019/papers/Sarafianos_Adversarial_Representation_Learning_for_Text-to-Image_Matching_ICCV_2019_paper.pdf)**.
 
 ### Repository Structure:
 ```

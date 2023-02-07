@@ -77,7 +77,9 @@ python3 main.py configs/<EXPERIMENT JSON FILE>
 
 
 >[1] https://github.com/YingZhangDUT/Cross-Modal-Projection-Learning
+
 > [2] https://github.com/moemen95/Pytorch-Project-Template
+
 > [3] https://github.com/labyrinth7x/Deep-Cross-Modal-Projection-Learning-for-Image-Text-Matching
 
 

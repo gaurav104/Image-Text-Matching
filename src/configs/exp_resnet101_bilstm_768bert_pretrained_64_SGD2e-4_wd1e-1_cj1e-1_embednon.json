@@ -1,0 +1,65 @@
+{
+  "exp_name": "resnet101_bilstm_768bert_pretrained_64_SGD2e-4_wd1e-1_cj1e-1_embednon",
+  "agent": "JointFeatureBert",
+  "mode": "train",
+  "bert": true,
+
+  "cuda": true,
+  "gpu_device": 0,
+  "seed": 1337,
+
+  "img_size": 224,
+  "input_channels": 3,
+  "jitter_factor": 0.1,
+    
+
+  "text_embedding": 768,
+  "embedding_size": 512,
+  "hidden_dim_size": 512,
+  "vocab_size": 4597,
+  "lstm_dropout_prob": 0.7,
+  "max_length": 50,
+  "bidirectional": true,  
+  "pretrained_embeddings": true,
+  "embed_non_trainable": true,
+
+  "image_model": "resnet101",
+  "batch_size": 64,
+  "classes_pb": 32,
+  "samples_pc":2,
+  "max_epoch":200,
+  "ckpt_steps": 5000,
+  "feature_size": 512,
+  "loss_weight": 1,
+  "CMPM": true,
+  "CMPC": true,
+  "constraints_text": true,
+  "constraints_images": true,
+  "num_classes": 11003,
+  "balanced_loader":false,
+
+  "pretrained_image_model": true,
+  "pretrained_model_path":"./pretrained_weights/mobilenet_v2-b0353104.pth",
+
+  "learning_rate": 2e-6,
+  "learning_rate_patience": 100,
+  "weight_decay": 1e-1,
+  "epsilon": 1e-12,
+  "e": 2.7182,
+  "betas": [0.9, 0.999],
+  "momentum": 0.99,
+
+  "validate_every": 2,
+
+  "checkpoint_file": "checkpoint.pth.tar",
+  "dataset": "CUHK-PEDES",
+  "data_loader": "CUHKLoader",
+  "pretrained": false,
+
+  "image_dir": "../CUHK-PEDES/images",
+  "anno_dir": "../CUHK-PEDES/processed_data",
+  "data_loader_workers": 4,
+  "pin_memory": true,
+  "async_loading": true,
+  "run_on_cluster": true
+}
